@@ -14,10 +14,6 @@ const Card = () => {
           <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
           <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
           <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
-          <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
-          <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
-          <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
-          <div className=" w-full h-8 bg-gray-400 rounded  px-2 py-[2px]"></div>
         </div>
       </div>
     </div>

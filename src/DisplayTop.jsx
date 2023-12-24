@@ -22,9 +22,9 @@ const DisplayTop = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div className=" border-t-[0.01px]   border-gray-600 h-3 flex items-center bg-black py-3  text-white justify-between px-4 text-xl w-full">
+    <div className=" border-t-[0.01px]   border-gray-600 h-3 flex items-center bg-black py-2  text-white justify-between px-4 text-base w-full">
       <div className=" flex gap-3">
-        <Md3GMobiledata className=" text-2xl" />
+        <Md3GMobiledata className=" text-lg" />
         <TbMobiledata />
       </div>
       <div className=" flex gap-3">
@@ -33,8 +33,8 @@ const DisplayTop = () => {
         <MdNotificationsActive />
       </div>
       <div className=" flex gap-3 items-center justify-center ">
-        <FaBatteryHalf className=" text-2xl" />
-        <span className=" text-base"> {hour + ":" + minute}</span>
+        <FaBatteryHalf className=" text-lg" />
+        <span className=" text-sm"> {hour + ":" + minute}</span>
       </div>
     </div>
   );

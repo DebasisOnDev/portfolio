@@ -33,7 +33,7 @@ const OneDrive = () => {
           </div>
           <img
             src={onedrive}
-            className="   h-2/3 flex items-center justify-center  object-contain"
+            className="  mx-auto  h-2/3 flex items-center justify-center  object-contain"
           />
         </div>
       </div>

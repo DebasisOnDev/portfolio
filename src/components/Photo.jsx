@@ -11,8 +11,8 @@ import img10 from "../assets/pexels-pixabay-52500.jpg";
 const Photo = () => {
   return (
     <div className=" h-[74vh] px-2 py-1 ">
-      <div className=" w-full items-start gap-1 justify-around flex flex-col h-auto ">
-        <h1 className=" text-2xl font-semibold pl-4 pt-3 text-white ">
+      <div className=" w-full items-start gap-1 justify-start flex flex-col h-full ">
+        <h1 className=" text-2xl font-semibold pl-4 pt-1.5 text-white ">
           Photos
         </h1>
         <div className=" flex w-full h-1/6 gap-1 ">
@@ -43,11 +43,8 @@ const Photo = () => {
           </div>
         </div>
         <div className=" flex w-full h-1/6  gap-1 bg-black ">
-          <div className=" h-full w-1/3 bg-red-200">
+          <div className=" h-4/5 w-1/3 bg-red-200">
             <img src={img6} className=" object-contain" />
-          </div>
-          <div className=" h-full w-2/3 bg-green-300">
-            <img src={img10} className=" object-contain" />
           </div>
         </div>
         {/* <div className=" flex w-full h-1/6  gap-1 bg-black ">

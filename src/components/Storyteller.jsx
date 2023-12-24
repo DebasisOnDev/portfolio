@@ -11,9 +11,9 @@ const Storyteller = () => {
   return (
     <div className=" h-[74vh] px-2 py-1 ">
       <div className="  w-full items-start justify-around flex flex-col h-full ">
-        <div className=" w-full bg-white flex flex-col gap-3 px-4 py-1 h-1/6">
-          <h1 className=" text-2xl font-semibold">STORYTELLER</h1>
-          <h1 className=" text-4xl font-semibold text-gray-700">
+        <div className=" w-full bg-white flex flex-col gap-2 px-4 py-1 h-1/6">
+          <h1 className=" text-1.5xl font-semibold">STORYTELLER</h1>
+          <h1 className=" text-3xl font-semibold text-gray-700">
             timeline places
           </h1>
         </div>

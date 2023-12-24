@@ -9,21 +9,21 @@ const Account = () => {
   return (
     <div className=" h-[74vh] px-2 py-1 ">
       <div className="  border-[0.01px] border-gray-700 w-full items-start justify-start px-1 flex flex-col h-full">
-        <div className=" px-2 flex gap-2 border-[0.01px] border-gray-700  w-full h-2/6 ">
+        <div className=" px-2 flex gap-2   w-full h-2/6 ">
           <div className="  py-2 w-2/5 flex items-center h-full ">
             <div className="    border-4 border-gray-400 p-1  h-[120px] pimg w-[120px] rounded-full flex items-center justify-center bg-white"></div>
           </div>
           <div className=" flex flex-col  gap-2 justify-center  items-start text-white w-3/5 h-full ">
-            <span className="  px-2 py-[2px] bg-slate-600 text-[13px] font-semibold rounded ">
+            <span className="  px-2 py-[2px] bg-slate-600 text-[11px] font-semibold rounded ">
               Debasis Rout
             </span>
-            <span className=" px-2 py-[2px] bg-slate-600 text-[13px] font-semibold rounded ">
+            <span className=" px-2 py-[2px] bg-slate-600 text-[11px] font-semibold rounded ">
               debasisrout347@gmail.com
             </span>
-            <span className=" px-2 py-[2px] bg-slate-600 text-[13px] font-semibold rounded ">
+            <span className=" px-2 py-[2px] bg-slate-600 text-[11px] font-semibold rounded ">
               Full Stack Software Engineer
             </span>
-            <span className=" px-2 py-[2px] bg-slate-600 text-[13px] font-semibold rounded ">
+            <span className=" px-2 py-[2px] bg-slate-600 text-[11px] font-semibold rounded ">
               Golang Backend Engineer
             </span>
           </div>
@@ -34,8 +34,8 @@ const Account = () => {
               to="/js"
               className=" px-4 gap-2   w-full flex items-center justify-center  bg-slate-500 text-white text-base font-semibold rounded"
             >
-              <RiJavascriptFill size={40} className=" text-yellow-300" />{" "}
-              <span>Full Stack Profile</span>
+              <RiJavascriptFill size={30} className=" text-yellow-300" />{" "}
+              <span className=" text-sm">Full Stack Profile</span>
             </Link>
           </div>
           <div className="flex  px-4  items-center justify-center w-full h-1/2">
@@ -43,8 +43,8 @@ const Account = () => {
               to="/golang"
               className=" gap-2 w-full  flex items-center justify-center px-4  bg-slate-500 text-white text-base font-semibold rounded"
             >
-              <BiLogoGoLang size={40} className=" text-blue-400" />{" "}
-              <span>Golang Backend Profile</span>
+              <BiLogoGoLang size={30} className=" text-blue-400" />{" "}
+              <span className=" text-sm">Golang Backend Profile</span>
             </Link>
           </div>
         </div>

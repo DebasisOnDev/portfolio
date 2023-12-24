@@ -61,20 +61,17 @@ const InternetExplorer = () => {
               )}
             </AnimatePresence>
           </div>
-          <div className=" border-[0.01px] border-gray-500 bg-black text-white flex h-1/6 absolute bottom-0 items-end justify-between px-3 gap-2 w-full py-2 ">
+          <div className=" border-[0.01px] border-gray-500 bg-black text-white flex h-1/6 absolute bottom-0 items-end justify-between px-1 gap-2 w-full py-1 ">
             <CiCirclePlus size={32} />
-            <div className=" flex gap-2 border-[0.02px] border-gray-400  rounded bg-gray-200">
-              <input
-                className=" p-1 focus:outline-none text-black "
-                type="text"
-              />
-              <button className=" p-[2px] bg-black text-white">
+            <div className=" flex items-center justify-center gap-1 border-[0.02px] border-gray-400 py-[2px] px-1.5   rounded bg-gray-200">
+              <input className="  focus:outline-none text-black " type="text" />
+              <button className="   text-black">
                 <GrSearch size={25} />
               </button>
             </div>
             <button
               onClick={handleButtonClick}
-              className="flex items-center justify-center"
+              className="flex mx-auto items-center justify-center"
             >
               <BsThreeDots size={23} />
             </button>

@@ -11,6 +11,7 @@ import { GiClick } from "react-icons/gi";
 
 import { BsGrid1X2Fill, BsHeadphones } from "react-icons/bs";
 import { FaVine, FaPhone } from "react-icons/fa";
+import { FaCalendarDays } from "react-icons/fa6";
 import { RxCamera } from "react-icons/rx";
 import { GoMail } from "react-icons/go";
 import { GrInternetExplorer } from "react-icons/gr";
@@ -40,9 +41,11 @@ import { motion } from "framer-motion";
 
 import g3 from "../assets/g3.jpg";
 import g4 from "../assets/g4.jpg";
-import haloimg from "../assets/haloimg.jpg";
-import gow from "../assets/gow.jpg";
 import cod from "../assets/cod.jpg";
+import word from "../assets/Word.svg";
+import excel from "../assets/Excel.svg";
+import outlook from "../assets/Outlook.svg";
+import pp from "../assets/PowerPoint.svg";
 
 const Home = () => {
   const music = [
@@ -57,11 +60,9 @@ const Home = () => {
   ];
 
   const xboximg = [
-    { xboxalt: "xbox image", img: haloimg },
     { xboxalt: "xbox image", img: cod },
     { xboxalt: "xbox image", img: g3 },
     { xboxalt: "xbox image", img: g4 },
-    { xboxalt: "xbox image", img: gow },
   ];
 
   const [currentXboxIndex, setCurrentXboxImage] = useState(0);
@@ -136,10 +137,9 @@ const Home = () => {
     <div className=" w-full h-[74vh]  flex    rounded-md      ">
       <div className="  rounded-lg shadow-sm     h-full w-full flex flex-col">
         <div className=" flex px-2 py-[2px] flex-col items-center  bg-black justify-center w-full h-[100%]">
-          <div className=" h-full  bg-black flex  gap-2  border-[0.01px] border-gray-400 w-full">
-            <div className=" w-1/3 h-full flex gap-2 flex-col">
+          <div className=" h-full  bg-black flex  gap-1  border-[0.01px] border-gray-400 w-full">
+            <div className=" w-1/3 h-full flex gap-1 flex-col">
               <motion.div
-                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.7 }}
                 initial={{ rotateY: 0 }}
                 animate={{ rotateY: smallIconAngleRotation }}
@@ -147,21 +147,21 @@ const Home = () => {
               >
                 <div
                   onClick={() => navigate("/explorer")}
-                  className={` flex items-center relative h-full w-full ${music[musicIndex].bg}  p-4 `}
+                  className={` flex items-center relative h-full w-full ${music[musicIndex].bg}  p-2 `}
                 >
                   {music[musicIndex].bg === "bg-blue-500" ? (
                     <GrInternetExplorer
-                      size={55}
+                      size={50}
                       className="text-white flex  justify-center w-full items-center"
                     />
                   ) : (
                     <BsFillEmojiGrinFill
-                      size={55}
+                      size={50}
                       className="text-white flex justify-center w-full items-center"
                     />
                   )}
                   {music[musicIndex].bg === "bg-blue-500" ? (
-                    <div className=" absolute pl-1  text-[11px] text-white left-0 bottom-0 ">
+                    <div className=" absolute pl-1  text-[10px] text-white left-0 bottom-0 ">
                       Internet Explorer
                     </div>
                   ) : (
@@ -172,7 +172,7 @@ const Home = () => {
 
               <Link
                 to="/camera"
-                className=" relative h-1/6 w-full justify-center bg-blue-500 flex items-center p-4 "
+                className=" relative h-1/6 w-full justify-center bg-blue-500 flex items-center p-2 "
               >
                 <RxCamera size={55} className=" text-white" />
                 <div className=" absolute pl-1 text-[11px] text-white left-0 bottom-0 ">
@@ -180,7 +180,6 @@ const Home = () => {
                 </div>
               </Link>
               <motion.div
-                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.7 }}
                 initial={{ rotateY: 0 }}
                 animate={{ rotateY: mailIconRotation }}
@@ -188,40 +187,54 @@ const Home = () => {
               >
                 <div
                   onClick={() => navigate("/mail")}
-                  className={`h-full relative w-full ${mailicon[micon].bg} flex justify-center items-center p-4 `}
+                  className={`h-full relative w-full ${mailicon[micon].bg} flex justify-center items-center p-2 `}
                 >
-                  <GoMail size={60} className=" text-white" />
+                  <GoMail size={55} className=" text-white" />
                   <div className=" absolute pl-1 text-[11px]  text-white  left-0 bottom-0 ">
                     {mailicon[micon].name === "" ? "" : "Mail"}
                   </div>
                 </div>
               </motion.div>
 
-              <div className=" h-1/6 w-full  flex gap-2 flex-col items-center  ">
-                <div className=" w-full h-1/2 flex gap-2">
+              <div className=" h-1/6 w-full  flex gap-1 flex-col items-center py-[2px]  justify-center  ">
+                <div className=" w-full h-1/2 flex gap-1">
                   <Link
                     to="/excel"
-                    className=" w-1/2 h-full excel bg-white "
-                  ></Link>
+                    className="  w-1/2 h-full flex items-center justify-center  bg-white "
+                  >
+                    <img
+                      src={excel}
+                      className=" w-full h-full object-contain"
+                    />
+                  </Link>
                   <Link
                     to="/word"
-                    className=" w-1/2 h-full bg-white word"
-                  ></Link>
+                    className="  w-1/2 flex items-center justify-center h-full bg-white "
+                  >
+                    <img src={word} className=" w-full h-full object-contain" />
+                  </Link>
                 </div>
-                <div className=" w-full h-1/2 flex gap-2">
+                <div className=" w-full h-1/2 flex gap-1">
                   <Link
                     to="/powerpoint"
-                    className=" w-1/2 h-full bg-white onedrive "
-                  ></Link>
+                    className="  flex items-center justify-center w-1/2 h-full bg-white  "
+                  >
+                    <img src={pp} className=" w-full h-full object-contain" />
+                  </Link>
                   <Link
                     to="/outlook"
-                    className=" w-1/2 h-full bg-white powerp"
-                  ></Link>
+                    className="  w-1/2 h-full flex items-center justify-center bg-white "
+                  >
+                    <img
+                      src={outlook}
+                      className=" w-full h-full object-contain"
+                    />
+                  </Link>
                 </div>
               </div>
               <Link
                 to="/onedrive"
-                className=" relative h-1/6 justify-center w-full  bg-blue-500 flex items-center p-4 "
+                className=" relative h-1/6 justify-center w-full  bg-blue-500 flex items-center p-2 "
               >
                 <BsCloudsFill size={55} className=" text-white" />
                 <div className=" absolute pl-1 text-[11px] text-white left-0 bottom-0 ">
@@ -229,11 +242,10 @@ const Home = () => {
                 </div>
               </Link>
               <motion.div
-                whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.7 }}
                 initial={{ rotateY: 0 }}
                 animate={{ rotateY: bIconRotation }}
-                className={` ${licon[bIconIndex].bg}  h-1/6 relative w-full flex items-center justify-center p-4 bg-blue-500 `}
+                className={` ${licon[bIconIndex].bg}  h-1/6 relative w-full flex items-center justify-center p-2 bg-blue-500 `}
               >
                 <div
                   onClick={() => navigate("/skype")}
@@ -254,7 +266,7 @@ const Home = () => {
                 </div>
               </motion.div>
             </div>
-            <div className=" w-2/3 flex flex-col gap-2 h-full">
+            <div className=" w-2/3 flex flex-col gap-1 h-full">
               <Link
                 to="/storyteller"
                 className={` text-gray-400 duration-500 transition-all relative w-full gap-1 h-1/6  flex items-center justify-center  cover `}
@@ -265,10 +277,9 @@ const Home = () => {
                 </span>
                 <BsGridFill size={35} />
               </Link>
-              <div className=" w-full flex gap-2 flex-col h-1/4  ">
-                <div className=" h-1/3 w-full flex gap-2 ">
+              <div className=" w-full flex gap-1 flex-col h-1/4  ">
+                <div className=" h-1/3 w-full flex gap-1 ">
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: smallIconAngleRotation }}
@@ -290,7 +301,6 @@ const Home = () => {
                     <PiVideo size={30} className=" text-white" />
                   </Link>
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateX: 0 }}
                     animate={{ rotateX: smallIconAngleRotation }}
@@ -314,24 +324,28 @@ const Home = () => {
                 </div>
                 <Link
                   to="/calender"
-                  className={` h-2/3 ${mailicon[micon].bg} duration-300 transition-all`}
+                  className={` h-2/3 ${mailicon[micon].bg}  duration-500 transition-all`}
                 >
-                  <div className=" h-2/3 w-full flex flex-col text-white text-[12px] pl-3 pt-1">
-                    <span>pick up sara at 4pm</span>
-                    <span>do some groceries</span>
+                  <div className=" h-full w-full flex items-center justify-around text-white text-[12px] pl-3 pt-1">
+                    <div>
+                      <FaCalendarDays size={50} className="text-white " />
+                    </div>
+                    <div className=" text-white flex flex-col text-[10px]">
+                      <span>Do some groceries</span>
+                      <span>Go to office</span>
+                    </div>
                   </div>
-                  <div className=" px-2 h-1/3 flex justify-between items-end pb-1 w-full">
+                  {/* <div className=" px-2 h-1/3 flex justify-between items-end pb-1 w-full">
                     <span className=" text-[11px] text-white font-semibold ">
                       Calender
                     </span>
-                  </div>
+                  </div> */}
                 </Link>
               </div>
-              <div className=" w-full h-1/4 flex flex-col gap-2 ">
-                <div className=" w-full h-1/3 flex gap-2 ">
+              <div className=" w-full h-1/4 flex flex-col gap-1 ">
+                <div className=" w-full h-1/3 flex gap-1 ">
                   <motion.div
                     onClick={() => navigate("/games")}
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: smallIconAngleRotation }}
@@ -343,7 +357,6 @@ const Home = () => {
                     <img className=" h-full w-full  " src={subwaysurfer} />
                   </Link>
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: rotationAngle }}
@@ -363,18 +376,17 @@ const Home = () => {
                     <FaVine className=" text-white " size={35} />
                   </Link>
                 </div>
-                <div className=" w-full flex gap-2  h-2/3 ">
+                <div className=" w-full flex gap-1  h-2/3 ">
                   <Link
                     to="/maps"
                     className=" relative flex items-center justify-center w-1/2 h-auto bg-sky-700"
                   >
-                    <RiMapPinLine className=" text-white " size={60} />
-                    <div className=" absolute pl-1 text-[11px] text-white left-0 bottom-0 ">
+                    <RiMapPinLine className=" text-white " size={55} />
+                    <div className=" absolute pl-1 text-[10px] text-white left-0 bottom-0 ">
                       HERE Maps
                     </div>
                   </Link>
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: bIconRotation }}
@@ -406,7 +418,6 @@ const Home = () => {
               </div>
               <motion.div
                 key={currentXboxIndex}
-                whileHover={{ scale: 1.1 }}
                 transition={{
                   duration: 1.5,
 
@@ -423,10 +434,9 @@ const Home = () => {
                   className=" h-full    object-fill  w-full "
                 />
               </motion.div>
-              <div className=" w-full h-[55px] flex gap-2 ">
-                <div className=" w-1/2 flex h-full  gap-2">
+              <div className=" w-full h-[55px] flex gap-1 ">
+                <div className=" w-1/2 flex h-full  gap-1">
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: rotationAngle * 2 }}
@@ -441,7 +451,6 @@ const Home = () => {
                   </motion.div>
 
                   <motion.div
-                    whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.7 }}
                     initial={{ rotateX: 0 }}
                     animate={{ rotateX: smallIconAngleRotation }}
@@ -462,7 +471,7 @@ const Home = () => {
                     </div>
                   </motion.div>
                 </div>
-                <div className=" flex gap-2 items-center justify-center w-1/2  h-full">
+                <div className=" flex gap-1 items-center justify-center w-1/2  h-full">
                   <Link
                     to="/"
                     className={` ${licon[bIconIndex].bg} flex transition-all duration-700 items-center justify-center w-1/2  h-full`}
@@ -478,7 +487,7 @@ const Home = () => {
                 </div>
               </div>
               <div
-                className={` ${mailicon[micon].bg} duration-700 transition-all h-6 bg-green-600`}
+                className={` ${mailicon[micon].bg} duration-700 transition-all h-3 bg-green-600`}
               ></div>
             </div>
           </div>
