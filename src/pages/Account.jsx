@@ -1,15 +1,8 @@
-import React from "react";
-import pfimg from "../assets/pfimg.png";
-import {
-  BiLogoGoLang,
-  BiLogoTypescript,
-  BiLogoTailwindCss,
-} from "react-icons/bi";
+import { BiLogoGoLang, BiLogoTypescript } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
-import { FaArrowRight, FaPython, FaDocker, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
+import { FaPython, FaDocker, FaReact, FaDatabase } from "react-icons/fa";
 import { DiNodejs } from "react-icons/di";
-import { SiApachekafka, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 const Account = () => {
@@ -86,7 +79,7 @@ const Account = () => {
               <SiTailwindcss size={60} className=" text-white" />
             </div>
             <div className=" h-full w-1/3  bg-slate-500 rounded flex items-center justify-center">
-              <SiApachekafka size={60} className=" text-white" />
+              <FaDatabase size={60} className=" text-white" />
             </div>
           </div>
         </div>

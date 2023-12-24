@@ -1,4 +1,3 @@
-import React from "react";
 import music from "../assets/listening music.gif";
 const Music = () => {
   return (

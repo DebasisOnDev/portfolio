@@ -1,4 +1,4 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 
 import { Link } from "react-router-dom";
@@ -105,6 +105,12 @@ const GolangProfile = () => {
                   className=" p-1.5 bg-slate-300 rounded flex items-center justify-center"
                 >
                   <RiTwitterXFill size={30} className=" text-black" />
+                </Link>
+                <Link
+                  to="https://github.com/DebasisOnDev"
+                  className=" p-1.5 bg-slate-300 rounded flex items-center justify-center"
+                >
+                  <FaGithub size={30} className=" text-black" />
                 </Link>
               </div>
             </div>

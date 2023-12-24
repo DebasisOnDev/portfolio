@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { FaLockOpen } from "react-icons/fa";
+
 import { useState, useEffect } from "react";
 import lockgif from "../assets/lockgif.gif";
 import { motion } from "framer-motion";
 
 const pageTransition = {
-  initial: { opacity: 0, y: "-100%" },
+  initial: { opacity: 0, y: "-80%" },
   animate: { opacity: 1, y: 0 },
   exit: {
     opacity: 0,

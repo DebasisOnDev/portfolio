@@ -1,4 +1,3 @@
-import React from "react";
 import ss from "../assets/ss.jpeg";
 
 const SubwaySurfer = () => {

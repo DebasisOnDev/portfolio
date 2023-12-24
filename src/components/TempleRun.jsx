@@ -1,4 +1,3 @@
-import React from "react";
 import tr from "../assets/tr.jpeg";
 const TempleRun = () => {
   return (

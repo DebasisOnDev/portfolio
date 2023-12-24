@@ -1,4 +1,3 @@
-import React from "react";
 import oned from "../assets/oned.webp";
 import onedrive from "../assets/OneDrive.svg";
 import { MdKeyboardArrowRight } from "react-icons/md";

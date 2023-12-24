@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Top from "./Top";
 import Bottom from "./Bottom";
@@ -29,7 +28,13 @@ const routeVariants = {
 const Layout = ({ children, location }) => {
   return (
     <AnimatePresence mode="wait">
-      <div className="bg-black rounded-[2.5px]">
+      <div
+        key={Math.random()}
+        className=" px-4 py-3 bg-black hidden sm:flex sm:items-center  h-screen w-full text-6xl font-semibold text-gray-600  sm:justify-center"
+      >
+        Kindly switch to the mobile mode , I assure it will worth it
+      </div>
+      <div className="bg-black rounded-[2.5px] sm:hidden">
         <Top />
         <DisplayTop />
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = () => {
   return (
     <div className=" h-[80vh] px-2 py-1 ">

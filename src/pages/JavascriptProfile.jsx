@@ -1,4 +1,4 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 
 import { Link } from "react-router-dom";
@@ -38,55 +38,46 @@ const JavascriptProfile = () => {
             </div>
           </Link>
           <Link
-            to="https://github.com/DebasisOnDev/Online-Doctor-Appointment-System"
+            to="https://github.com/DebasisOnDev/portfolio"
             className=" py-1 px-1 border-gray-400 border-[0.01px] flex flex-col rounded gap-2"
           >
             <div className=" w-full flex items-center justify-center h-10 bg-gray-400 rounded border-gray-300 border-[0.01px] ">
-              Online Doctor Authentication System
+              Portfolio
             </div>
             <div className=" w-full px-2 flex  gap-1.5 flex-wrap">
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Authentication
+                Reactjs
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Gofiber
+                Javascript
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Versioning
-              </span>
-              <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                MongoDB
-              </span>
-              <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Docker
-              </span>
-              <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                RBAC
+                Tailwind css
               </span>
             </div>
           </Link>
           <Link
-            to="https://github.com/DebasisOnDev/Hotel-Reservation-System"
+            to="https://github.com/DebasisOnDev/airbnb_clone"
             className=" py-1 px-1 border-gray-400 border-[0.01px] flex flex-col rounded gap-2"
           >
             <div className=" w-full flex items-center justify-center h-10 bg-gray-400 rounded border-gray-300 border-[0.01px] ">
-              Hotel Booking System
+              Airbnb Clone
             </div>
             <div className=" w-full px-2 flex  gap-1.5 flex-wrap">
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
                 Authentication
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Gofiber
+                Reactjs
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Versioning
+                Nodejs
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
                 MongoDB
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Docker
+                Tailwind css
               </span>
             </div>
           </Link>
@@ -108,6 +99,12 @@ const JavascriptProfile = () => {
                   className=" p-1.5 bg-slate-300 rounded flex items-center justify-center"
                 >
                   <RiTwitterXFill size={30} className=" text-black" />
+                </Link>
+                <Link
+                  to="https://github.com/DebasisOnDev"
+                  className=" p-1.5 bg-slate-300 rounded flex items-center justify-center"
+                >
+                  <FaGithub size={30} className=" text-black" />
                 </Link>
               </div>
             </div>

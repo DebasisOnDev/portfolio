@@ -1,4 +1,3 @@
-import React from "react";
 import pan1 from "../assets/pan1.jpg";
 import pan2 from "../assets/pan2.jpg";
 import pan3 from "../assets/pan3.jpg";

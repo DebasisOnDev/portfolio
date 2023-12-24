@@ -1,4 +1,3 @@
-import React from "react";
 import { FaMapMarked } from "react-icons/fa";
 
 const Maps = () => {

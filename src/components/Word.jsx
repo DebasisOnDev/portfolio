@@ -4,7 +4,7 @@ import word from "../assets/Word_64x64.svg";
 const Word = () => {
   return (
     <div className=" h-[80vh] px-2 py-1 ">
-      <div className=" w-full items-start justify-around flex flex-col h-full border-[0.01px] border-gray-300">
+      <div className=" w-full items-start justify-around flex flex-col h-full ">
         <img
           src={word}
           className=" animate-pulse duration-500 transition-all"

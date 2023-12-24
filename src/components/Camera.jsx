@@ -1,4 +1,3 @@
-import React from "react";
 import { BsCamera } from "react-icons/bs";
 import {
   MdCameraswitch,

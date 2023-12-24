@@ -1,4 +1,3 @@
-import React from "react";
 import windows from "../assets/Windows.gif";
 
 const Windows = () => {

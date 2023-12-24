@@ -1,4 +1,3 @@
-import React from "react";
 import { TbPlayerPlayFilled } from "react-icons/tb";
 
 const Video = () => {

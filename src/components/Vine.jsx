@@ -1,4 +1,3 @@
-import React from "react";
 import vine from "../assets/vine-logo-removebg-preview.png";
 const Vine = () => {
   return (

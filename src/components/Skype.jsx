@@ -1,5 +1,3 @@
-import React from "react";
-import { AiOutlineSkype } from "react-icons/ai";
 import { FaWindows } from "react-icons/fa";
 
 import skype from "../assets/skype-2.gif";

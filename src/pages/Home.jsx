@@ -10,28 +10,28 @@ import {
 import { GiClick } from "react-icons/gi";
 
 import { BsGrid1X2Fill, BsHeadphones } from "react-icons/bs";
-import { FaBatteryHalf, FaVine, FaBus, FaPhone } from "react-icons/fa";
+import { FaVine, FaPhone } from "react-icons/fa";
 import { RxCamera } from "react-icons/rx";
 import { GoMail } from "react-icons/go";
 import { GrInternetExplorer } from "react-icons/gr";
+import { FaLock } from "react-icons/fa6";
 import {
   BsCloudsFill,
   BsMusicNoteBeamed,
   BsFillEmojiGrinFill,
 } from "react-icons/bs";
 import { BsGridFill } from "react-icons/bs";
-import { PiVideo, PiNumberSevenBold } from "react-icons/pi";
-import { FaFileWord } from "react-icons/fa";
+import { PiVideo } from "react-icons/pi";
+
 import { GrSkype } from "react-icons/gr";
 import { AiFillPicture } from "react-icons/ai";
 import { TfiCreditCard } from "react-icons/tfi";
 import { GrGamepad } from "react-icons/gr";
 import subwaysurfer from "../assets/subwaysurfer.jpeg";
 import templerun from "../assets/templerun.jpeg";
-import { TiSocialAtCircular } from "react-icons/ti";
+
 import { RiMapPinLine } from "react-icons/ri";
-import halo from "../assets/halo.jpg";
-import store from "../assets/store.svg";
+
 import { TfiMicrosoftAlt } from "react-icons/tfi";
 import { RiAccountCircleLine } from "react-icons/ri";
 import trun from "../assets/trun.jpeg";
@@ -320,8 +320,8 @@ const Home = () => {
                     <span>pick up sara at 4pm</span>
                     <span>do some groceries</span>
                   </div>
-                  <div className=" px-2 h-1/3 flex justify-between items-start w-full">
-                    <span className=" text-sm text-white font-semibold ">
+                  <div className=" px-2 h-1/3 flex justify-between items-end pb-1 w-full">
+                    <span className=" text-[11px] text-white font-semibold ">
                       Calender
                     </span>
                   </div>
@@ -408,7 +408,7 @@ const Home = () => {
                 key={currentXboxIndex}
                 whileHover={{ scale: 1.1 }}
                 transition={{
-                  duration: 0.9,
+                  duration: 1.5,
 
                   type: "spring",
                 }}
@@ -420,7 +420,7 @@ const Home = () => {
                 <img
                   src={xboximg[currentXboxIndex].img}
                   alt={xboximg[currentTileIndex].xboxalt}
-                  className=" h-full   object-fill  w-full "
+                  className=" h-full    object-fill  w-full "
                 />
               </motion.div>
               <div className=" w-full h-[55px] flex gap-2 ">
@@ -462,14 +462,24 @@ const Home = () => {
                     </div>
                   </motion.div>
                 </div>
-                <Link
-                  to="/phone"
-                  className=" flex bg-blue-500 items-center justify-center w-1/2  h-full"
-                >
-                  <FaPhone className=" text-white" size={35} />
-                </Link>
+                <div className=" flex gap-2 items-center justify-center w-1/2  h-full">
+                  <Link
+                    to="/"
+                    className={` ${licon[bIconIndex].bg} flex transition-all duration-700 items-center justify-center w-1/2  h-full`}
+                  >
+                    <FaLock className=" text-white" size={35} />
+                  </Link>
+                  <Link
+                    to="/phone"
+                    className=" flex bg-blue-500 items-center justify-center w-1/2  h-full"
+                  >
+                    <FaPhone className=" text-white" size={35} />
+                  </Link>
+                </div>
               </div>
-              <div className=" h-6 bg-green-600"></div>
+              <div
+                className={` ${mailicon[micon].bg} duration-700 transition-all h-6 bg-green-600`}
+              ></div>
             </div>
           </div>
         </div>

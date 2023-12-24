@@ -1,4 +1,3 @@
-import React from "react";
 import call from "../assets/Outgoing Call.gif";
 const Phone = () => {
   return (

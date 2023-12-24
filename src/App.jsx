@@ -34,7 +34,7 @@ import JavascriptProfile from "./pages/JavascriptProfile";
 const App = () => {
   const location = useLocation();
   return (
-    <div className=" mx-2 my-1   border-orange-500 rounded border-[6px]">
+    <div className=" mx-2 my-1   border-orange-500 sm:border-none  rounded border-[6px]">
       <Layout location={location}>
         <Routes className=" md:hidden flex">
           <Route path="/" element={<LockScreen />} />
