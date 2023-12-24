@@ -2,7 +2,7 @@ import pp from "../assets/PowerPoint_64x64.svg";
 
 const PowerPoint = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-around flex flex-col h-full ">
         <img src={pp} className=" animate-pulse duration-500 transition-all" />
         <div className=" flex flex-col gap-3 w-full">

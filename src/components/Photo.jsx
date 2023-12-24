@@ -10,7 +10,7 @@ import img9 from "../assets/pexels-pixabay-37833.jpg";
 import img10 from "../assets/pexels-pixabay-52500.jpg";
 const Photo = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start gap-1 justify-around flex flex-col h-auto ">
         <h1 className=" text-2xl font-semibold pl-4 pt-3 text-white ">
           Photos

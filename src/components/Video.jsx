@@ -2,7 +2,7 @@ import { TbPlayerPlayFilled } from "react-icons/tb";
 
 const Video = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className="h-[74vh] px-2 py-1 ">
       <div className=" w-full gap-1  items-start justify-around flex flex-col h-auto">
         <h1 className=" text-2xl font-semibold pl-4 pt-3 text-white ">
           Videos

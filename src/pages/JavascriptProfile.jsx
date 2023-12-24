@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const JavascriptProfile = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-start flex flex-col h-full">
         <h1 className=" text-2xl font-semibold text-white p-3 "> Projects:</h1>
         <div className=" relative px-2 text-white h-full w-full flex flex-col gap-4">

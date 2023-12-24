@@ -1,6 +1,6 @@
 const Card = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-start flex flex-col h-full">
         <h1 className=" text-3xl text-white font-semibold underline pl-4 py-3">
           Notes

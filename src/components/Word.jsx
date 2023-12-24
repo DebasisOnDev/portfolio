@@ -1,9 +1,8 @@
-import React from "react";
 import word from "../assets/Word_64x64.svg";
 
 const Word = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-around flex flex-col h-full ">
         <img
           src={word}

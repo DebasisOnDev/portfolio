@@ -2,7 +2,7 @@ import outlook from "../assets/Outlook_64x64.svg";
 
 const Outlook = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-around flex flex-col h-full">
         <img
           src={outlook}

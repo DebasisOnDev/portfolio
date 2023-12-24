@@ -6,7 +6,7 @@ import game4 from "../assets/game (4).svg";
 
 const Games = () => {
   return (
-    <div className=" h-[80vh] flex items-center justify-center px-2 py-1 ">
+    <div className=" h-[74vh] flex items-center justify-center px-2 py-1 ">
       <div className=" w-full items-start justify-start mx-auto flex  flex-col h-full ">
         <h1 className=" text-xl text-white font-semibold  pl-4 py-3">
           Windows Store

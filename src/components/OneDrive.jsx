@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 const OneDrive = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className="  w-full items-start gap-4 bg-white justify-around flex flex-col h-full border-[0.01px] border-gray-300">
         <div className=" h-1/3 flex flex-col gap-3 w-full">
           <img src={oned} className=" w-full h-full object-cover" />

@@ -9,7 +9,7 @@ import { CgMenuRound } from "react-icons/cg";
 
 const Storyteller = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className="  w-full items-start justify-around flex flex-col h-full ">
         <div className=" w-full bg-white flex flex-col gap-3 px-4 py-1 h-1/6">
           <h1 className=" text-2xl font-semibold">STORYTELLER</h1>

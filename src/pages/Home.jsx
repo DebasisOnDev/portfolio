@@ -133,7 +133,7 @@ const Home = () => {
   }, [mailicon.length, mailIconRotation]);
 
   return (
-    <div className=" w-full h-[80vh]  flex    rounded-md      ">
+    <div className=" w-full h-[74vh]  flex    rounded-md      ">
       <div className="  rounded-lg shadow-sm     h-full w-full flex flex-col">
         <div className=" flex px-2 py-[2px] flex-col items-center  bg-black justify-center w-full h-[100%]">
           <div className=" h-full  bg-black flex  gap-2  border-[0.01px] border-gray-400 w-full">

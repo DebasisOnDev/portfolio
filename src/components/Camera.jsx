@@ -9,7 +9,7 @@ import { LuCameraOff } from "react-icons/lu";
 
 const Camera = () => {
   return (
-    <div className=" flex h-[80vh] w-full px-2 py-1 ">
+    <div className=" flex h-[74vh] w-full px-2 py-1 ">
       <div className=" relative camera w-full h-full  ">
         <div className=" absolute h-auto w-full top-0 flex items-center justify-around px-4 py-3">
           <span className=" opacity-70 border-2 border-white p-2 rounded-full bg-transparent   text-white ">

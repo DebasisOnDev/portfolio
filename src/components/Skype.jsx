@@ -3,7 +3,7 @@ import { FaWindows } from "react-icons/fa";
 import skype from "../assets/skype-2.gif";
 const Skype = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" bg-sky-500 w-full items-start justify-around flex flex-col h-full ">
         <div className=" items-center px-4 gap-6 py-6 w-full h-full flex flex-col">
           <img src={skype} />

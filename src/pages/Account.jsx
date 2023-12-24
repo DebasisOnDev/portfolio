@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Account = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className="  border-[0.01px] border-gray-700 w-full items-start justify-start px-1 flex flex-col h-full">
         <div className=" px-2 flex gap-2 border-[0.01px] border-gray-700  w-full h-2/6 ">
           <div className="  py-2 w-2/5 flex items-center h-full ">

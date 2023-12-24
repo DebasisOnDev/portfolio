@@ -4,7 +4,7 @@ import pan3 from "../assets/pan3.jpg";
 import pan4 from "../assets/pan4.jpg";
 const Panoroma = () => {
   return (
-    <div className=" h-[80vh] px-2 py-1 ">
+    <div className=" h-[74vh] px-2 py-1 ">
       <div className=" w-full items-start justify-start flex gap-2 flex-col h-full">
         <h1 className=" text-2xl font-semibold pl-4 pt-3 text-white ">
           Panoroma

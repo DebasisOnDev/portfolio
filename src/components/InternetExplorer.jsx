@@ -19,7 +19,7 @@ const InternetExplorer = () => {
     setIsVisible(!isVisible);
   };
   return (
-    <div className=" h-[80vh] w-full px-2 py-1  bg-black">
+    <div className=" h-[74vh] w-full px-2 py-1  bg-black">
       <div className=" h-full w-full py-1">
         <div className=" h-1/6 flex items-center px-8 ">
           <div className=" p-6 w-full bg-gray-400 rounded"></div>
@@ -61,7 +61,7 @@ const InternetExplorer = () => {
               )}
             </AnimatePresence>
           </div>
-          <div className=" border-[0.01px] border-gray-500 bg-black text-white flex h-1/6 absolute bottom-0 items-end justify-between px-3 gap-2 w-full py-3 ">
+          <div className=" border-[0.01px] border-gray-500 bg-black text-white flex h-1/6 absolute bottom-0 items-end justify-between px-3 gap-2 w-full py-2 ">
             <CiCirclePlus size={32} />
             <div className=" flex gap-2 border-[0.02px] border-gray-400  rounded bg-gray-200">
               <input
@@ -76,7 +76,7 @@ const InternetExplorer = () => {
               onClick={handleButtonClick}
               className="flex items-center justify-center"
             >
-              <BsThreeDots size={30} />
+              <BsThreeDots size={23} />
             </button>
           </div>
         </div>

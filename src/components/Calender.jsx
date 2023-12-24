@@ -20,7 +20,7 @@ const MyCalendar = () => {
   };
 
   return (
-    <div className="h-[80vh] px-2 py-1 border-[0.03px] border-gray-500">
+    <div className="h-[74vh] px-2 py-1 border-[0.03px] border-gray-500">
       <h1 className="text-3xl font-bold text-white mb-6 pl-2 ">Calendar </h1>
 
       <div className="bg-white h-auto  py-8 px-4  rounded-lg shadow-md">

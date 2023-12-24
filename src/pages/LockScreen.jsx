@@ -35,7 +35,7 @@ const LockScreen = () => {
 
   return (
     <motion.div
-      className="h-[80vh] flex-col lockscreen items-center justify-between bg-sky-300 text-white border-[4px] border-black flex "
+      className="h-[74vh] flex-col lockscreen items-center justify-between bg-sky-300 text-white border-[4px] border-black flex "
       variants={pageTransition}
       initial="initial"
       animate="animate"
