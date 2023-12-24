@@ -14,23 +14,26 @@ const JavascriptProfile = () => {
             className=" py-1 px-1 border-gray-400 border-[0.01px] flex flex-col rounded gap-2"
           >
             <div className=" w-full flex items-center justify-center h-10 bg-gray-400 rounded border-gray-300 border-[0.01px] ">
-              E-Commerce System
+              onlyfoods
             </div>
             <div className=" w-full px-2 flex  gap-1.5 flex-wrap">
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Authentication
+                React
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Gofiber
+                Tailwind css
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Versioning
+                Nodejs
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
                 MongoDB
               </span>
               <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
-                Docker
+                Authentication
+              </span>
+              <span className=" px-1 py-[1px] bg-gray-400 rounded text-[12px] text-white ">
+                Expressjs
               </span>
             </div>
           </Link>
