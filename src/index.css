@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.excel {
+  background-image: url("./assets/Excel.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.word {
+  background-image: url("./assets/Word.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.powerp {
+  background-image: url("./assets/Outlook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.onedrive {
+  background-image: url("./assets/PowerPoint.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cover {
+  background-image: url("./assets/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subway {
+  background-image: url("./assets/subwaysurfer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lockscreen {
+  background-image: url("./assets/lockscreen.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.camera {
+  background-image: url("./assets/photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outlooklg {
+  background-image: url("./assets/Outlooklg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.maps {
+  background-image: url("./assets/GoogleMapTA.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.snowfall {
+  background-image: url("./assets/Snowfall.gif");
+  background-repeat: no-repeat;
+  background-size: fill;
+  color: white;
+}
+
+.pimg {
+  background-image: url("./assets/pfimg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

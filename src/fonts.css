@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Nokiakokia";
+  src: url("./assets/NokiaKokia.ttf") format("truetype");
+}
+
+.logo {
+  font-family: "Nokiakokia", sans-serif;
+}
